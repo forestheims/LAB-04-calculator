@@ -17,3 +17,13 @@ addButton.addEventListener('click', () => {
 });
     // do any needed work with the value(s)
     // update DOM to reflect new value(s)
+
+    // Subtract
+const subtractNumber1 = document.getElementById('subtract-number-1');
+const subtractNumber2 = document.getElementById('subtract-number-2');
+const subtractButton = document.getElementById('subtract-button');
+const subtractAnswer = document.getElementById('subtract-answer');
+
+subtractButton.addEventListener('click', () => {
+    console.log('Subtract Button Clicked');
+});
