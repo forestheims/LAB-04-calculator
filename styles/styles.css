@@ -33,3 +33,23 @@ footer {
     background-color: #FAF0EA;
     padding: 10px;
 }
+
+.calculator-box {
+    display: grid;
+    grid-template-columns: 100px 10px 100px 80px auto;
+    grid-auto-rows: min-content;
+    grid-gap: 10px;
+}
+     
+section {
+    display: contents;
+    background-color: burlywood;
+    border: 10px, solid, cadetblue;
+    height: 50px;
+    width: 420px;
+    padding: 10px 20px 10px;
+}
+
+#add-button:hover {
+    cursor: pointer;
+}
