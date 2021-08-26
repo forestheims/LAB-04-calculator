@@ -54,3 +54,8 @@ section {
 #add-button:hover {
     cursor: pointer;
 }
+
+.function-name {
+    font-size: 20px;
+    font-weight: 700;
+}
