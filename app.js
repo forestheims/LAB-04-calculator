@@ -30,3 +30,13 @@ subtractButton.addEventListener('click', () => {
     const difference = subtractFunction(num1, num2);
     subtractAnswer.textContent = difference;
 });
+
+// Multiply
+const multiplyNumber1 = document.getElementById('multiply-number-1');
+const multiplyNumber2 = document.getElementById('multiply-number-2');
+const multiplyButton = document.getElementById('multiply-button');
+const multiplyAnswer = document.getElementById('multiply-answer');
+
+multiplyButton.addEventListener('click', () => {
+    console.log('Multiply Button Pressed');
+});
