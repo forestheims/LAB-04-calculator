@@ -1,5 +1,5 @@
 // import functions
-import { addFunction } from './calculator.js';
+import { addFunction, subtractFunction } from './calculator.js';
 
 // reference needed DOM elements
 const addNumber1 = document.getElementById('add-number-1');
@@ -12,7 +12,7 @@ const addAnswer = document.getElementById('add-answer');
 addButton.addEventListener('click', () => {
     const num1 = Number(addNumber1.value);
     const num2 = Number(addNumber2.value);
-    const sum = addFunction(num1, num2)
+    const sum = addFunction(num1, num2);
     addAnswer.textContent = sum;
 });
     // do any needed work with the value(s)
@@ -25,5 +25,8 @@ const subtractButton = document.getElementById('subtract-button');
 const subtractAnswer = document.getElementById('subtract-answer');
 
 subtractButton.addEventListener('click', () => {
-    console.log('Subtract Button Clicked');
+    const num1 = Number(subtractNumber1.value);
+    const num2 = Number(subtractNumber2.value);
+    const difference = subtractFunction(num1, num2);
+    subtractAnswer.textContent = difference;
 });
