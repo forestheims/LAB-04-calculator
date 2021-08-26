@@ -12,7 +12,7 @@ const addAnswer = document.getElementById('add-answer');
 addButton.addEventListener('click', () => {
     const num1 = Number(addNumber1.value);
     const num2 = Number(addNumber2.value);
-    const sum = num1 + num2;
+    const sum = addFunction(num1, num2)
     addAnswer.textContent = sum;
 });
     // do any needed work with the value(s)
