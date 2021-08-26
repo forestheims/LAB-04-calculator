@@ -43,3 +43,13 @@ multiplyButton.addEventListener('click', () => {
     const product = multiplyFunction(num1, num2);
     multiplyAnswer.textContent = product;
 });
+
+// Divide
+const divideNumber1 = document.getElementById('divide-number-1');
+const divideNumber2 = document.getElementById('divide-number-2');
+const divideButton = document.getElementById('divide-button');
+const divideAnswer = document.getElementById('divide-answer');
+
+divideButton.addEventListener('click', () => {
+    console.log('Divide Button Pressed');
+});
