@@ -1,4 +1,5 @@
 // import functions
+import { addFunction } from './calculator.js';
 
 // reference needed DOM elements
 const addNumber1 = document.getElementById('add-number-1');
@@ -9,7 +10,10 @@ const addAnswer = document.getElementById('add-answer');
 // set event listeners 
     // get user input(s)
 addButton.addEventListener('click', () => {
-    console.log('Add Button clicked');
+    const num1 = Number(addNumber1.value);
+    const num2 = Number(addNumber2.value);
+    const sum = num1 + num2;
+    addAnswer.textContent = sum;
 });
     // do any needed work with the value(s)
     // update DOM to reflect new value(s)
